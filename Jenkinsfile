@@ -7,7 +7,7 @@ pipeline {
              }
              post {
                  always {
-                     jiraSendBuildInfo site: 'thombergs.atlassian.net'
+                     jiraSendBuildInfo()
                  }
              }
          }
