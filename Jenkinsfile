@@ -5,10 +5,10 @@ pipeline {
              steps {
                  echo 'Building...'
              }
-             post {
-                 always {
-                     jiraSendBuildInfo site: 'thombergs.atlassian.net'
-                 }
+         }
+         stage('Deploy to prod') {
+             steps {
+                 echo 'Deploying...'
              }
          }
      }
