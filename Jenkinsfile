@@ -6,7 +6,23 @@ pipeline {
                  echo 'Building...'
              }
          }
-         stage('deploy to prod') {
+
+          stage('deploy to staging') {
+             steps {
+                 echo 'Deploying...'
+             }
+         }
+          stage('deploy to hurz') {
+             steps {
+                 echo 'Deploying...'
+             }
+         }
+          stage('deploy to test') {
+             steps {
+                 echo 'Deploying...'
+             }
+         }
+          stage('deploy to dev') {
              steps {
                  echo 'Deploying...'
              }
