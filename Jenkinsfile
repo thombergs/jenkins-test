@@ -17,7 +17,7 @@ pipeline {
              }
               post {
                  always {
-                     jiraSendDeploymentInfo environmentId: 'prod-1', environmentName: 'prod', environmentType: 'production'
+                     jiraSendDeploymentInfo environmentId: 'stg-1', environmentName: 'stg', environmentType: 'staging'
                  }
              }
          }
