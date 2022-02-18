@@ -5,3 +5,4 @@
 - TEST-1:  expected to show up in tomjenkins.atlassian.net
 - TEST-1:  expected to show up in tomjenkins.atlassian.net
 - TEST-2:  expected to show up in tomjenkins.atlassian.net
+- TEST-3 JEN-13:  expected to show up in thombergs.atlassan.net and tomjenkins.atlassian.net
