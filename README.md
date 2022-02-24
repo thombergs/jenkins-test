@@ -11,3 +11,4 @@
 - JEN-18: different pipeline name
 - JEN-19 TEST-7: auto-deployments
 - JEN-23: Forge app- JEN-23: Forge app
+- JEN-24: Forge app
