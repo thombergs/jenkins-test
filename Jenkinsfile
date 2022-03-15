@@ -22,7 +22,7 @@ pipeline {
 
         stage("gated deploy to prod (waiting for approval)") { // Check request status
             steps {
-                retry(5) { // Poll every 5s for 5 times
+                retry(100) { // Poll every 5s for 100 times
                     waitUntil {
                         sleep 5
                         checkGatingStatus(
