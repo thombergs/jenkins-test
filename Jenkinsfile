@@ -4,24 +4,6 @@ pipeline {
 
     stages {
 
-        stage('build') {
-            steps {
-                echo 'Building...'
-            }
-        }
-
-        stage('deploy to test') {
-            steps {
-                echo 'Deploying...'
-            }
-        }
-
-        stage('deploy to staging') {
-            steps {
-                echo 'Deploying...'
-            }
-        }
-
         stage('gated deploy to prod') { // Raise change request
             steps {
                 echo 'Raise change request...'
