@@ -40,9 +40,9 @@ pipeline {
 
         stage("gated deploy to prod (waiting for approval)") { // Check request status
             steps {
-                retry(20) { // Poll every 30s for 10min
+                retry(5) { // Poll every 5s for 5 times
                     waitUntil {
-                        sleep 30
+                        sleep 5
                         checkGatingStatus(
                                 site: 'thombergs.atlassian.net',
                                 environmentId: 'us-prod-1'
