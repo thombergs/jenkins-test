@@ -14,7 +14,7 @@ pipeline {
                         state: "pending",
                         enableGating: true,
                         serviceIds: [
-                                'myVeryImportantService'
+                                'b:YXJpOmNsb3VkOmdyYXBoOjpzZXJ2aWNlLzE3MTBiYTU0LTA4NjEtMTFlYi1hNTVhLTBhNzdmM2Y0NTMwNC82YmI5MzYwZS1hNDE4LTExZWMtODA3Zi0wYWJlM2Y0YTY2MDE='
                         ]
                 )
             }
