@@ -22,7 +22,7 @@ pipeline {
             }
         }
 
-        stage('deploy to prod (gated)') { // Raise change request
+        stage('gated deploy to prod') { // Raise change request
             steps {
                 echo 'Raise change request...'
                 jiraSendDeploymentInfo(site: 'thombergs.atlassian.net',
@@ -38,7 +38,7 @@ pipeline {
             }
         }
 
-        stage("deploy to prod (waiting for approval)") { // Check request status
+        stage("gated deploy to prod (waiting for approval)") { // Check request status
             steps {
                 retry(20) { // Poll every 30s for 10min
                     waitUntil {
